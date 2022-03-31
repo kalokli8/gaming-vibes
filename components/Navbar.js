@@ -28,12 +28,12 @@ export default function Navbar() {
             {user ? (
               <>
                 <li>{user.emailg}</li>
-                <li onClick={login} className="btn">
+                <li onClick={logout} className="btn">
                   Log out
                 </li>
               </>
             ) : (
-              <li onClick={logout} className="btn">
+              <li onClick={login} className="btn">
                 Login/Signup
               </li>
             )}
